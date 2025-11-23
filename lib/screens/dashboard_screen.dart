@@ -1,6 +1,10 @@
 import 'package:assignment_two/screens/area_of_circle_screen.dart';
 import 'package:assignment_two/screens/arithmetic_screen.dart';
+import 'package:assignment_two/screens/column_screen.dart';
+import 'package:assignment_two/screens/container_screen.dart';
+import 'package:assignment_two/screens/flutter_layout_screen.dart';
 import 'package:assignment_two/screens/palindrome_screen.dart';
+import 'package:assignment_two/screens/richtext_screen.dart';
 import 'package:assignment_two/screens/simple_interest_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +35,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 style: ButtonStyle(
                   foregroundColor: WidgetStatePropertyAll(Colors.white70),
                   backgroundColor: WidgetStatePropertyAll(
-                    const Color.fromRGBO(96, 125, 139, 1),
+                    const Color.fromARGB(255, 139, 96, 126),
                   ),
                 ),
                 onPressed: () {
@@ -53,7 +57,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 style: ButtonStyle(
                   foregroundColor: WidgetStatePropertyAll(Colors.white70),
                   backgroundColor: WidgetStatePropertyAll(
-                    const Color.fromRGBO(96, 125, 139, 1),
+                    const Color.fromARGB(255, 139, 96, 96),
                   ),
                 ),
                 onPressed: () {
@@ -75,7 +79,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 style: ButtonStyle(
                   foregroundColor: WidgetStatePropertyAll(Colors.white70),
                   backgroundColor: WidgetStatePropertyAll(
-                    const Color.fromRGBO(96, 125, 139, 1),
+                    const Color.fromARGB(255, 103, 139, 96),
                   ),
                 ),
                 onPressed: () {
@@ -97,7 +101,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 style: ButtonStyle(
                   foregroundColor: WidgetStatePropertyAll(Colors.white70),
                   backgroundColor: WidgetStatePropertyAll(
-                    const Color.fromRGBO(96, 125, 139, 1),
+                    const Color.fromARGB(255, 96, 137, 139),
                   ),
                 ),
                 onPressed: () {
@@ -110,6 +114,94 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   );
                 },
                 child: Text("Palindrome"),
+              ),
+            ),
+            SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  foregroundColor: WidgetStatePropertyAll(Colors.white70),
+                  backgroundColor: WidgetStatePropertyAll(
+                    const Color.fromARGB(255, 96, 137, 139),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return RichtextScreen();
+                      },
+                    ),
+                  );
+                },
+                child: Text("Rich Text"),
+              ),
+            ),
+            SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  foregroundColor: WidgetStatePropertyAll(Colors.white70),
+                  backgroundColor: WidgetStatePropertyAll(
+                    const Color.fromARGB(255, 96, 137, 139),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return FlutterLayoutScreen();
+                      },
+                    ),
+                  );
+                },
+                child: Text("Flutter Layout"),
+              ),
+            ),
+            SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  foregroundColor: WidgetStatePropertyAll(Colors.white70),
+                  backgroundColor: WidgetStatePropertyAll(
+                    const Color.fromARGB(255, 96, 137, 139),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return ColumnScreen();
+                      },
+                    ),
+                  );
+                },
+                child: Text("Column Screen"),
+              ),
+            ),
+            SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  foregroundColor: WidgetStatePropertyAll(Colors.white70),
+                  backgroundColor: WidgetStatePropertyAll(
+                    const Color.fromARGB(255, 96, 137, 139),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return ContainerScreen();
+                      },
+                    ),
+                  );
+                },
+                child: Text("Container Screen"),
               ),
             ),
           ],
